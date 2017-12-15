@@ -1,7 +1,7 @@
 package rooms;
 
-import people.Person;
-import items.Item;
+import game.Person;
+import game.Item;
 
 import java.util.Arrays;
 
@@ -54,7 +54,23 @@ public abstract class Room {
     {
     	return y;
     }
-    public abstract void print();
+    public abstract void print(); 
+    {
+    	if (!explored && occupants == null)
+    	{
+    	System.out.print("[]");
+    	}
+    	else if (occupants != null)
+    	{
+    		System.out.print("[");
+    		occupants.print();
+    		System.out.print("]");
+    	}
+    	else if (explored) 
+    	{
+    		System.out.print("[+]");
+    	}
+    }
 
 
 

@@ -1,8 +1,8 @@
 package game;
 
-import items.Item;
+import game.Item;
 import rooms.*;
-import people.Person;
+import game.Person;
 
 import java.util.Scanner;
 

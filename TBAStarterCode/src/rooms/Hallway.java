@@ -1,7 +1,7 @@
 package rooms;
 
-import people.Person;
-import items.Item;
+import game.Person;
+import game.Item;
 
 
 public class Hallway extends Room {
