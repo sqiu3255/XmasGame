@@ -4,14 +4,24 @@ import rooms.Room;
 
 public abstract class Person {
 
-	public void setRoom(Room room) {
-		// TODO Auto-generated method stub
-		
+	String firstName,
+			lastName;
+	
+	public Person (String firstName, String lastName)
+	{
+		this.firstName = firstName;
+		this.lastName = lastName;
 	}
-
-	public char[] print() {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public String getFirstName()
+	{
+			return this.firstName;
 	}
-
+	
+	public String getLastName()
+	{
+			return this.lastName;
+	}
+	
+	
 }

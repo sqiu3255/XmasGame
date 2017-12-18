@@ -19,21 +19,21 @@ public class GameRunner {
                 boolean[] doors = {true,true,true,true};
                 Person[] people = {};
                 Item[] items = {};
-
+                
                 row[i] = new Hallway(doors, people, items, i, j);
             }
 
         }
 
-        School tech = new School(map);
+        House tech = new House(map);
 
 
         boolean gameOn = true;
-        Person player1 = Utilities.createPerson();
+        Person player1 = Person.createPerson();
         Scanner in = new Scanner(System.in);
         while(gameOn)
         {
-            System.out.println("Welcome to the Halls of Tech, " + player1.getFirstName());
+            System.out.println("You are now under the chimney, Santa's Helper, " + player1.getFirstName());
             map[0][0].addOccupant(player1);
 
             tech.printMap();
